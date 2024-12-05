@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>CALCULATOR</h1>
+        <form id="a">
+            <input id="b">
+            <br><br>
+            <div id="div">
+                <input type="button" value="AC" onclick="a.b.value='' ">
+                <input type="button" value="C" onclick="backspace()">
+                <input type="button" value="%" onclick="a.b.value+='%' ">
+                <input type="button" value="/" onclick="a.b.value+='/' ">
+            </div>
+            <br><br>
+            <div id="div">
+                <input type="button" value="7" onclick="a.b.value+='7' ">
+                <input type="button" value="8" onclick="a.b.value+='8' ">
+                <input type="button" value="9" onclick="a.b.value+='9' ">
+                <input type="button" value="*" onclick="a.b.value+='*' ">
+            </div>
+            <br><br>
+            <div id="div">
+                <input type="button" value="4" onclick="a.b.value+='4' ">
+                <input type="button" value="5" onclick="a.b.value+='5' ">
+                <input type="button" value="6" onclick="a.b.value+='6' ">
+                <input type="button" value="-" onclick="a.b.value+='-' ">
+            </div>
+            <br><br>
+            <div id="div">
+                <input type="button" value="1" onclick="a.b.value+='1' ">
+                <input type="button" value="2" onclick="a.b.value+='2' ">
+                <input type="button" value="3" onclick="a.b.value+='3' ">
+                <input type="button" value="+" onclick="a.b.value+='+' ">
+            </div>
+            <br><br>
+            <div id="div">
+                <input type="button" value="0" onclick="a.b.value+='0' ">
+                <input type="button" value="." onclick="a.b.value+='.' ">
+                <input type="button" value="=" onclick="a.b.value=eval(a.b.value)">
+            </div> 
+        </form>
+    </center>
+   
+    <script src="main.js"></script>
+</body>
+</html>
